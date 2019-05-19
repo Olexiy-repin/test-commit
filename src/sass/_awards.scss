@@ -1,0 +1,135 @@
+.awards {
+  padding-top: .8rem;
+  padding-bottom: 2rem;
+}
+
+.awards__title {
+  font-family: AcromEB;
+  font-size: pxToRem(20px);
+  text-transform: uppercase;
+  text-align: center;
+  color: #22252e;
+  margin-bottom: 3.6rem;
+}
+
+.awards__card {
+  background-color: #fff;
+  padding: 2.5rem .9rem 1.5rem 1.6rem;
+  box-shadow: 0 15px 32px 0 rgba(0, 0, 0, .16);
+  margin: 0 auto;
+  width: 14.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  position: relative;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &::before {
+    display: block;
+    content: "";
+    width: pxToRem(12px);
+    height: pxToRem(12px);
+    background-color: #ff6c00;
+    position: absolute;
+    top: -1.5rem;
+    left: .1rem;
+  }
+  &::after {
+    display: block;
+    counter-increment: newCount;
+    content: "0" counter(newCount);
+    font-family: MontserratB;
+    font-size: pxToRem(70px);
+    color: #f6f6f6;
+    position: absolute;
+    top: -3.3rem;
+    left: 1.9rem;
+    z-index: -1;
+  }
+}
+
+.awards__card-title {
+  font-family: AcromEB;
+  font-size: pxToRem(18px);
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: .4rem;
+}
+
+.awards__card-text {
+  font-family: AcromR;
+  font-size: pxToRem(14px);
+  color: #6b6f7a;
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+  span {
+    font-family: AcromEB;
+    color: #000;
+  }
+}
+
+.awards__card-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.awards__card-img {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .awards {
+    padding-top: 2.1rem;
+    padding-bottom: 3rem;
+  }
+
+  .awards__title {
+    font-size: pxToRem(24px);
+    margin-bottom: 3.9rem;
+  }
+
+  .awards__card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .awards__card-text {
+    margin-bottom: 0;
+  }
+
+  .awards__card {
+    margin-bottom: 0;
+    height: 29rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .awards {
+    padding-top: 1.7rem;
+    padding-bottom: 4rem;
+  }
+
+  .awards__card-container {
+    width: 57.5rem;
+    margin: 0 auto;
+  }
+
+  .awards__card {
+    width: 31.8%;
+    margin: 0;
+    height: 27.2rem;
+    &::before {
+      top: -2rem;
+    }
+  }
+
+  .awards__card-title {
+    margin-bottom: .7rem;
+  }
+
+  .awards__title {
+    margin-bottom: 4.6rem;
+  }
+}
