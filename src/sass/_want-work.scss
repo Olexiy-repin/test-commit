@@ -1,0 +1,71 @@
+.want-work {
+  padding-top: .8rem;
+  padding-bottom: 4.8rem;
+}
+
+.want-work__title {
+  font-family: AcromEB;
+  font-size: pxToRem(20px);
+  color: #1b2436;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.6;
+  margin-bottom: .9rem;
+}
+
+.want-work__subtitle {
+  font-family: AcromEB;
+  font-size: 1rem;
+  color: #1b2436;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.want-work__btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.want-work__btn {
+  font-family: AcromEB;
+  font-size: pxToRem(12px);
+  text-transform: uppercase;
+  color: #fff;
+  width: 16.3rem;
+  padding: 1.1rem 0;
+  background-color: #e16b1d;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1.2px;
+  box-shadow: 0 0 43px 8px rgba(225,107,29,.6);
+}
+
+@media (min-width: 768px) {
+  .want-work {
+    padding-top: 1.8rem;
+    padding-bottom: 5.5rem;
+  }
+
+  .want-work__title {
+    font-size: pxToRem(36px);
+    margin-bottom: .7rem;
+    br {
+      display: none;
+    }
+  }
+
+  .want-work__subtitle {
+    margin-bottom: 2.3rem;
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .want-work {
+    padding-top: 1.5rem;
+    padding-bottom: 6.2rem;
+  }
+}

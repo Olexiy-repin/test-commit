@@ -1,0 +1,85 @@
+.video {
+  padding-top: 4.7rem;
+  padding-bottom: 4.2rem;
+}
+
+.video__container {
+  display: flex;
+  justify-content: center;
+  width: pxToRem(310px);
+  height: pxToRem(220px);
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.video__picture {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    &::before {
+      transition: all .5s linear;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    &::after {
+      transition: all .5s linear;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  &::before {
+    display: block;
+    content: url("img/video/play-btn.png");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &::after {
+    display: block;
+    content: url("img/video/elipse.png");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+
+.video__btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video__modal-btn {
+  font-family: AcromEB;
+  font-size: pxToRem(12px);
+  text-transform: uppercase;
+  color: #fff;
+  width: 16.3rem;
+  padding: 1.1rem 0;
+  background-color: #e16b1d;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1.2px;
+  box-shadow: 0 0 43px 8px rgba(225,107,29,.6);
+}
+
+@media (min-width: 768px) {
+  .video {
+    padding-top: 5.5rem;
+    padding-bottom: 5.6rem;
+  }
+
+  .video__container {
+    width: pxToRem(652px);
+    height: pxToRem(399px);
+    margin-bottom: 4.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    padding-top: 7.1rem;
+    padding-bottom: 5.9rem;
+  }
+}

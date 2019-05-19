@@ -1,0 +1,95 @@
+@media (max-width: 767px) {
+  #myModal {
+    width: 95% !important;
+  }
+
+  .modal-form__title {
+    font-size: 1.5rem;
+  }
+
+  .form-modal__input-container {
+    width: 14rem;
+  }
+}
+
+.myModal__input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.myModal__input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.myModal__input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.myModal__input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.myModal__input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.myModal__input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.myModal__input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.myModal__input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+::-webkit-input-placeholder {font-family: AcromR; font-size: 1rem; color:#b6c4ca; letter-spacing: .6px;}
+::-moz-placeholder          {font-family: AcromR; font-size: 1rem; color:#b6c4ca; letter-spacing: .6px;}/* Firefox 19+ */
+:-moz-placeholder           {font-family: AcromR; font-size: 1rem; color:#b6c4ca; letter-spacing: .6px;}/* Firefox 18- */
+:-ms-input-placeholder      {font-family: AcromR; font-size: 1rem; color:#b6c4ca; letter-spacing: .6px;}
+
+#myModal {
+  border-radius: 0;
+  width: 36.2rem;
+}
+
+.modal-form {
+  padding-top: 4.1rem;
+  padding-bottom: 4.5rem;
+}
+
+.modal-form__title {
+  font-family: AcromB;
+  font-size: pxToRem(30px);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3.55rem;
+  letter-spacing: 1.7px;
+  span {
+    color: #fec02a;
+  }
+}
+
+.form-modal__input-container {
+  width: 18.8rem;
+  margin: 0 auto;
+  margin-bottom: 3.4rem;
+}
+
+.modalDialog-form-row {
+  margin-bottom: 2.5rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.myModal__input {
+  font-family: AcromR;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b6c4ca;
+  padding-bottom: .2rem;
+  &:focus {
+    border-bottom: 1px solid #fec02a;
+  }
+}
+
+.submit-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-form__btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: AcromB;
+  font-size: 1rem;
+  color: #fff;
+  background: #e16b1d;
+  width: 14.8rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem 0;
+}
